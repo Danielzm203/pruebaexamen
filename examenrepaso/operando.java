@@ -1,49 +1,31 @@
 import java.util.Scanner;
 
-public class operando {
+public class holamundo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated constructor stub
-		int i,j;
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Cuantos casos hay?");
-		int n=sc.nextInt();
-		sc.nextLine();
-		String[] calcula= new String[n];
-		System.out.println("Ingresame las operaciones:");
-		for (i=0; i<n; i++) {
-			calcula[i]=sc.nextLine();
-		}
-		for (j=0; j<n; j++) {
-			 //  for (i = 0; i < calcula[j].length(); i++) {
-	                int num1 =calcula[j].charAt(0)-'0';
-	                char operador = calcula[j].charAt(1);
-	                int num2 = calcula[j].charAt(2)-'0';
-	                		//Character.getNumericValue(opcion);
-	                switch (operador) {
-	                case '+':
-	                	int suma=num1+num2;
-	                	System.out.println(suma);
-	                	break;
-	                case '-':
-	                	int resta=num1-num2;
-	                	System.out.println(resta);
-	                	break;
-	                case '*':
-	                	int multiplica=num1*num2;
-	                	System.out.println(multiplica);
-	                	break;
-	                case '/':
-	                	int division=num1/num2;
-	                	System.out.println(division);
-	                	break;
-	                	default:
-	                		System.out.println("Opcion no valida");
-	                	
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in); //reparar el buffer de teclado para poder escribor. Crear un objeto apartir de un molde
+		int n;
+		int s;
+		int a;
+		int b;
+		int c;
+		int d;
+System.out.println("Hola mundo");
+System.out.println("Dame un numero");
+n=sc.nextInt();
+System.out.println("Dame otro numero:");
+s=sc.nextInt();
+a=n+s;
+b=n-s;
+c=n*s;
+d=n/s;
 
-	                }
-	                
-	                
-	         //   }
-		}
-		
+System.out.println("El total de la suma es: " +a);
+System.out.println("El total de la resta es: " +b);
+System.out.println("El total de la multiplicacion es: " +c);
+System.out.println("El total de la division es: " +d);
+
+	}
+
+}
